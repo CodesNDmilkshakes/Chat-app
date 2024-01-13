@@ -9,7 +9,6 @@ body {
     background-color: white;
     position: relative;
     overflow: hidden;
-    height: 100%;
 }
 .big-design {
     position: absolute;
@@ -25,7 +24,6 @@ body {
     position: absolute;
     top: 13rem;
     right: 13rem;
-    z-index: 3;
     display: flex;
     flex-direction: column;
 }
@@ -254,7 +252,38 @@ img {
     align-items: center;
     width: 2rem;
 }
-@media (max-width: 600px) {
+@media only screen and (max-width: 1250px) {
+    .outer-texts {
+        position: absolute;
+        top: 13rem;
+        left: 60%;
+        display: flex;
+        flex-direction: column;
+        width: 20rem;
+    }
+    p {
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .big-design {
+        left: -10%;
+    }
+    .main-phone {
+        left: 30%;
+    }
+    .outer-texts {
+        max-width: 900px;
+        top: 110%;
+        left: 6%;
+        text-align: center;
+        
+    }
+    p { 
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 500px) {
     .big-design {
         left: -30%;
     }
@@ -263,13 +292,13 @@ img {
     }
     .outer-texts {
         max-width: 500px;
-        min-width: 400px;
-        top: 110%;
+        top: 105%;
         left: 6%;
         text-align: center;
         
     }
     p {
-        padding: 0 1.5rem;
+        width: 100%;
     }
+ 
 }
