@@ -292,6 +292,11 @@ img {
     background: linear-gradient(hsl(293, 100%, 63%), hsl(264, 100%, 61%));
     border-radius: 0 0 20rem 20rem;
   }
+  .outer-texts-cotainer {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+  }
 
   .texts {
     display: flex;
